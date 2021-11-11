@@ -1,0 +1,103 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(184, 184, 184);
+        color: white;
+        
+    }
+}
+
+/* Utilities */
+.h-primary{
+    font-family:"monospace";
+    font-size: 2.3rem;
+    
+}
+.h-secondary{
+    font-family:"sans-serif";
+    color:rgb(75, 75, 75);
+}
+.h-tertiary{
+    font-family: "Source Code Pro";
+    color:black;
+    font-weight: bolder;
+}
+
+
+/* Grid configration */
+.item1{
+    grid-area:navbar;
+}
+.item2{
+    grid-area:mainDoc;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas:'navbar mainDoc';
+}
+
+/* Navigation */
+#navbar{
+    border-right: 4px solid grey;
+    height: 100%;
+    
+    position: fixed;
+    
+    
+}
+#navbar header{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid blue; */
+    
+}
+#navbar header h1{
+    margin: 19px;
+    font-weight: lighter;
+    font-size: 2.4rem;
+}
+.nav-link{
+    text-align: center;
+    border-top:1px solid black;
+    padding: 18px 1px;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+.nav-link:visited{
+    color: inherit;
+}
+/* .nav-link:active{
+    color: inherit;
+} */
+
+
+/* Main-Doc */
+#main-doc{
+    position:relative;
+    margin-left: 325px;
+    
+}
+
+.main-section{
+    padding:25px;
+}
+.main-section article{
+    padding:12px;
+}
+.code{
+    display:flex;
+    text-align: left;
+    justify-content: left;
+    background-color: whitesmoke;
+    padding: 23px;
+    width: 800;
+    height: auto;
+    margin: 12px;
+    word-wrap: normal;
+}
